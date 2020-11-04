@@ -12,7 +12,7 @@ int Positivos() {
     do{
       scanf("%d", &a[cont]);
       if(a[cont]<=0){
-        printf("Digite apenas números maiores que zero\n");
+        printf("Siga as instruções: Apenas números maiores que zero!\n");
       }
     } while (a[cont]<=0);
   }
@@ -27,13 +27,13 @@ int Media3(){
     for(cont=0; cont<6; cont++){
       if(a[cont]%3==0){
         soma3=soma3+a[cont];
-        cont3=cont3+1;
+        cont3++;
       }
     }
     if(cont3==0){
-      printf("Não foi digitado nenhum múltipo de 3\n");
+      printf("\nNão foi digitado múltipos de 3.\n");
     } else {
-      printf("A média dos números multiplos de 3 contidos no vetor A e %.2f",soma3/cont3);
+      printf("\nA média dos números multiplos de 3 contidos no vetor A é: %.2f",soma3/cont3);
   
     }
   return 0;
